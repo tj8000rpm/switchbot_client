@@ -24,7 +24,7 @@ def decode(mac_addr, valueStr):
     print(sensorValue)
 
 cmd = 'bluetoothctl scan on'
-c = subprocess.Popen(cmd.split(' '), stdout=subprocess.PIPE, shell=True)
+c = subprocess.Popen(cmd.split(' '), stdout=subprocess.PIPE)
 
 key_id = '00000d00-0000-1000-8000-00805f9b34fb'
 LEN_DATA = 6
